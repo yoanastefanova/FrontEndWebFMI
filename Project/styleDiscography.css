@@ -1,0 +1,152 @@
+html
+{
+    min-height:100;
+}
+
+
+body
+{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande';
+    background-image:linear-gradient(rgba(255, 255, 255, 0.384), rgba(255, 255, 255, 0.384)),  url(zHR7ayvVH6Q1.jpg);
+    height:150vh;
+    background-position: center top;
+    background-attachment: fixed;
+    background-size:cover;  
+}
+
+
+.buttons
+{
+    position: absolute;
+    left: 50%;
+    top: 4.7%;
+    transform: translate(-50%, -50%);
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif; 
+    position:fixed;
+    z-index:1;
+    background-color: rgba(49, 5, 61, 0.767);
+    padding:1.5vh;
+    width: 100%;
+}
+
+.btns
+{
+    padding: 4vh 10vw;
+    color:rgb(255, 255, 255); 
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    font-size: 1.7vw;
+    text-decoration: none;
+    transition: 0.3s ease;
+    text-align: center;
+    padding: 7px;
+}
+
+.btns:hover
+{
+    background-color: rgba(255, 255, 255, 0.692);
+    color: rgba(49, 5, 61, 0.904);
+    border: 2px solid rgba(49, 5, 61, 0.904);
+    font-weight: bold;
+    transition: 0.7s ease;
+}
+
+.title
+{
+    border: 5px solid rgba(69, 4, 88, 0.788);   
+    padding: 2px 50px;
+    position: absolute;
+    left:50%;
+    top:14%;
+    color: rgba(69, 4, 88, 0.788);
+    font-size: 6.1vh;
+    font-weight: bold;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    transform: translate(-50%, -50%);
+    
+
+    /*
+    display:flex;
+    align-items: center; 
+    border: 5px solid rgba(85, 10, 100, 0.726);   
+    padding: 2px 40px;
+    position: absolute;
+    left: 35%;
+    color: rgba(85, 10, 100, 0.808);
+    font-size: 9vh;
+    */
+}
+
+#inuit
+{
+    position: absolute;
+    top:130vh;
+    left:40vw;  
+    max-width: 40vh;
+    width:100%;
+    height:auto;
+    margin-bottom:10vh;
+}
+
+#jut
+{
+    position: absolute;
+    top:130vh;
+    left:20vw;   
+    max-width:40vh;
+    height: auto;
+    margin-bottom:10vh;
+}
+
+#letgo
+{
+    position: absolute;
+    top:85vh;
+    left:60vw;   
+    max-width:40vh;
+    height: auto;
+}
+
+#bluesky
+{
+    position: absolute;
+    top:85vh;
+    left:40vw;   
+    max-width:40vh;
+    height: auto;
+}
+
+#appen
+{
+    position: absolute;
+    top:85vh;
+    left:20vw;   
+    max-width:40vh;
+    height: auto;
+}
+
+#waves
+{
+    position: absolute;
+    top:40vh;
+    left:60vw;   
+    max-width:40vh;
+    height: auto;
+}
+
+#descensus
+{
+    position: absolute;
+    top:40vh;
+    left:40vw;   
+    max-width:40vh;
+    height: auto;
+}
+
+#amulet
+{
+    position: absolute;
+    top:40vh;
+    left:20vw;   
+    max-width:40vh;
+    height: auto;
+}

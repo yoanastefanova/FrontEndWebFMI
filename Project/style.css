@@ -1,0 +1,129 @@
+header  
+{
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(220, 166, 235, 0.699)), url(7db789cfc9b07c960b0f503df91cce93.jpg);
+    height: 150vh;
+    background-size: 100%;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.logo img 
+{
+    float: left;
+    width: 150px;
+    height: auto;
+    
+}
+
+.main
+{
+    max-width: 1280px;
+    margin:auto;
+    position:fixed;
+}
+
+
+.title 
+{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+
+.title h1
+{  
+    font-style:oblique;
+    position: absolute; 
+    font-size: 6.1vw;
+    left: 50%;
+    top: 50%;
+    color:rgba(59, 4, 73, 0.897);
+    transform: translate(-50%, -50%);
+    position:fixed;
+}
+
+.title h2
+{
+    position: absolute;
+    font-size: 1.7vw;
+    font-weight: normal;
+    left: 50%;
+    top: 65%;   
+    color:rgb(59, 4, 73);
+    transform: translate(-50%, -50%);
+    position:fixed;
+}
+
+.button
+{
+    position: absolute;
+    left: 50%;
+    top: 79%;
+    transform: translate(-50%, -50%);
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif; 
+    position:fixed;
+}
+
+.btn 
+{   
+    border-radius: 11px;
+    border: 2px solid rgb(49, 5, 61, 0.788);
+    padding: 1.5vh;
+    color:rgb(77, 24, 88);  
+    font-size: 2vw;
+    text-decoration: none;
+}
+
+
+.btn:hover
+{
+    background-color: rgba(49, 5, 61, 0.788);
+    color: rgba(235, 235, 235, 0.808);
+}
+
+.buttons
+{
+    position: absolute;
+    left: 50%;
+    top: 8%;
+    transform: translate(-50%, -50%);
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif; 
+    position:fixed;
+}
+
+.btns
+{
+    border-radius: 11px;
+    padding: 4px 14px;
+    color:rgb(255, 255, 255);  
+    font:  sans-serif;
+    font-size: 1.7vw;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+.btns:hover
+{
+    background-color: rgba(86, 20, 104, 0.589);
+    /*background-color: rgba(119, 25, 145, 0.336);*/
+    color: rgb(255, 255, 255);
+    border: 1px solid rgb(255, 255, 255);
+}
+
+
+/*RESPONSIVENESS*/
+
+
+/* Media Queries: Tablet Landscape */
+@media screen and (max-width: 1060px) {
+    #primary { width:67%; }
+    #secondary { width:30%; margin-left:3%;}  
+}
+
+/* Media Queries: Tabled Portrait */
+@media screen and (max-width: 768px) {
+    #primary { width:100%; }
+    #secondary { width:100%; margin:0; border:none; }
+}

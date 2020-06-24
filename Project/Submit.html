@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang = "en">
+    
+<head>
+    <title>Submit Form</title>
+    <meta charset = "UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="HandheldFriendly" content="true">
+    <link href = "styleSubmit.css" rel ="stylesheet" type = "text/css">
+
+    
+    <script type ="text/javascript" src = "submitForm.js"></script>
+</head>
+
+
+<body>
+    
+    <header>
+        <nav class = "buttons">           
+            <a href = "website.html" class = "btns">HOME</a>
+            <a href = "About.html" class = "btns">HISTORY</a>
+            <a href = "Discography.html" class = "btns">DISCOGRAPHY</a>
+            <a href = "Submit.html" class = "btns">FORM</a>
+        </nav>
+
+        <h1 class = "title">SUBMIT FORM</h1>
+        <h2>Please Enter Your Data</h2>
+    </header>
+
+    <form class = "submit-form" name ="form1">
+        <a class = name1>First Name:</a> <input type="text" name="fname" id="box1"><br><br>
+        <a class = name1>Last Name:</a> <input type="text" name="lname" id="box2"><br><br>
+        <a class="name1">Gender:</a><br><br>
+        <input type="radio" name="gender" id="gM" value="male"> <a class = "gen">Male</a> <br>
+        <input type="radio" name="gender" id="gF" value="female"> <a class = "gen">Female</a><br><br>
+        <a class="name1">Which of these albums have you listened to?</a><br><br>
+        <input type="checkbox" name="albums" id="al"><a class = "gen">The Amulet</a><br>
+        <input type="checkbox" name="albums" id="al"><a class = "gen">Descensus</a><br>
+        <input type="checkbox" name="albums" id="al"><a class = "gen">Violent Waves</a><br>
+        <input type="checkbox" name="albums" id="al"><a class = "gen">Blue Sky Noise</a><br>
+        <input type="checkbox" name="albums" id="al"><a class = "gen">On Letting Go</a><br>
+        <input type="checkbox" name="albums" id="al"><a class = "gen">Juturna</i></a><br>
+        <input type="checkbox" name="albums" id="al"><a class = "gen">None</a><br><br>
+        <a class = name1>E-Mail:</a>: <input type="text" name="email" id="box"><br><br>
+
+
+        <div class = "userSubmit">
+            <button type = "submit" id="sub-button" onclick="submit()">SUBMIT</button> 
+            <button type="reset" id = "res-button" value="RESET" id="res">RESET</button>
+        </div>
+    </form>
+    
+    
+</body>
+</html>

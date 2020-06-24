@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>The JavaScript Guru</title>
+    <script>
+
+        function reverseStr(str){
+            var chars = str.split("");
+            var revArr = chars.reverse();
+            var res = revArr.join("");
+
+            return res;
+        }
+    //Count all the numbers in the array and push the result as first element in the result array if there are more than 0 numbers found
+    //If the element is a string, reverse it and push it to the result array
+
+        var input = [1, "123456789", function(a) { return a + 11; }, { "name": "Martin" }]; //["test", 1, "world", "42", 2];
+
+        var result = [];
+
+        var sz = input.length;
+        var counter = 0;
+        
+        const isNum = (curVal) => curVal >= 0;
+
+        for(var i=0;i<sz;i++){
+            if(isNum(input[i]) && typeof(input[i]) != 'string'){
+                counter++;
+            } 
+        } 
+
+        if(counter>0){
+            result.push(counter);
+        }
+        
+        for(var i=0;i<sz;i++){
+            if(typeof input[i] == 'string'){
+                result.push(reverseStr(input[i]));
+
+            }    
+
+            if(typeof input[i] == 'function'){
+                result.push(input[i](42));
+            }
+
+            if(typeof input[i] == 'object' && typeof input[i] != 'array' && typeof input[i] != 'function'){
+                for(var [key, value] of Object.entries(input[i])){
+                   result.push(`${key}: ${value}`)
+                }
+
+            }
+
+        }
+
+        console.log(JSON.stringify(result));   
+    </script>
+
+
+</head>
+
+<body>
+
+</body>
+
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+    <title>Average</title>
+    <script>
+
+      
+    function processData(input){
+        var input = [1, 1, 1, 1, 1],
+        //input = eval(input);
+        var helper = [];       
+
+        var res;
+        var sz = input.length;
+        var i=0;
+
+        while(i<sz){       
+            if(i===0){    
+                if(input[i] === input[i+1]){              
+                    helper.push(i);
+                    i++;
+                }
+                i++;
+            }
+
+           else if(i===(sz-1)){          
+                if(input[i] === input[i-1]){             
+                    helper.push(i);
+                    i++;
+                }
+                i++;
+            }
+
+            if(input[i] === ((input[i-1] + input[i+1])/2)){
+                helper.push(i);
+                i++;
+            }           
+            else i++;
+        }
+        
+        var szv = helper.length;
+
+        if(szv === 0){       
+            res = -1;
+        }
+        else res = helper[szv-1];  
+
+        console.log(res);
+    }       
+        
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Test1</title>
+    <script>
+
+class Person {
+    constructor(name) {
+        this.name = name;
+    }
+    introduce() {
+        console.log(`I am a first born named ${this.name}`);
+    }
+}
+    class Student extends Person {
+        introduce() {
+            super.introduce();
+            console.log(`I am a student`);
+        }
+}
+
+let o1 = new Person("Adam");
+let o2 = new Student("Jessie");
+console.log(o1.introduce());
+console.log(o2.introduce());
+
+
+function outer() {
+        let x = 5;
+        function inner(y) {
+            return x + y;
+        }
+    console.log(inner(10));
+}
+
+outer();
+
+
+
+
+const a = new Set([1,2,3]);
+const b = new Set([4,3,2]);
+const intersection = new Set(
+[...a].filter(x => b.has(x)));
+console.log(intersection);
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

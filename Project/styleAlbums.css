@@ -1,0 +1,108 @@
+body
+{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande';
+    background-image:linear-gradient(rgba(255, 255, 255, 0.384), rgba(255, 255, 255, 0.384)),  url(zHR7ayvVH6Q1.jpg);
+    height:150vh;
+    background-position: center top;
+    background-attachment: fixed;
+    background-size:cover;  
+}
+
+.buttons
+{
+    position: absolute;
+    left: 50%;
+    top: 4.7%;
+    transform: translate(-50%, -50%);
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif; 
+    position:fixed;
+    z-index:1;
+    background-color: rgba(72, 17, 87, 0.603);
+    padding:1.5vh;
+    width: 100%;
+}
+
+.btns
+{
+    padding: 4vh 10vw;
+    color:rgb(255, 255, 255); 
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    font-size: 1.7vw;
+    text-decoration: none;
+    transition: 0.3s ease;
+    text-align: center;
+    padding: 7px;
+}
+
+.btns:hover
+{
+    background-color: rgba(255, 255, 255, 0.692);
+    color: rgba(49, 5, 61, 0.904);
+    border: 2px solid rgba(49, 5, 61, 0.904);
+    font-weight: bold;
+    transition: 0.7s ease;
+}
+
+.title
+{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+
+aside h1
+{
+    color:rgba(59, 4, 73, 0.719)
+}
+
+aside h2
+{
+    color: rgba(59, 4, 73, 0.719)
+}
+
+aside
+{
+    font-style:oblique;
+    position: absolute; 
+    font-size: 1.5vw;
+    left: 64vw;
+    top: 50vh;
+    color:rgba(59, 4, 73, 0.719);
+    transform: translate(-50%, -50%);
+}
+
+iframe
+{
+    position: absolute; 
+    left: 50%;
+    top: 120vh;
+    transform: translate(-50%, -50%);
+    max-width: 100vh;
+    max-height: 50vh;
+    width:100%;
+}
+
+@media only screen and (max-width:800px)
+{
+    /* For tablets: */
+    .main 
+    {
+      width: 80%;
+      padding: 0;
+    }
+    .right 
+    {
+      width: 100%;
+    }
+}
+
+img
+{
+    position: absolute;
+    height: 65vh;
+    width:auto;
+    top:20vh;
+    left:15%;  
+}
